@@ -10,9 +10,15 @@
   text-decoration: none;
 }
 
+.dark-mode {
+  -webkit-filter: invert(1) hue-rotate(180deg);
+          filter: invert(1) hue-rotate(180deg);
+}
+
 html, body {
   width: 100%;
   height: 100%;
+  background: #fff;
 }
 
 .grid {
@@ -87,12 +93,11 @@ main .sidebar nav ul li a {
 }
 
 main .content {
-  padding: 35px 20px;
+  padding: 35px 40px;
 }
 
 main .content .search-bar {
   width: 100%;
-  padding: 0 20px;
 }
 
 main .content .search-bar input {
@@ -108,13 +113,13 @@ main .content .search-bar input {
 main .content .articles {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr 1fr;
+  -ms-grid-columns: (auto)[4];
+      grid-template-columns: repeat(4, auto);
+  grid-gap: 40px;
   margin: 30px auto;
 }
 
 main .content .articles article {
-  margin: 20px;
   padding: 20px;
   background: #373737;
   display: -webkit-box;
@@ -148,10 +153,34 @@ main .content .articles article:hover p {
 main .btn-add {
   position: fixed;
   bottom: 2.5%;
-  right: 2.5%;
+  right: 1%;
 }
 
 main .btn-add button {
+  border-radius: 50%;
+  background: #6495ED;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px;
+  cursor: pointer;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
+main .btn-dark-mode {
+  position: fixed;
+  bottom: 13.5%;
+  right: 1%;
+}
+
+main .btn-dark-mode button {
   border-radius: 50%;
   background: #6495ED;
   display: -webkit-box;
