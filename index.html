@@ -175,15 +175,35 @@
 
         <div class="btn-add">
             <button>
-                <img src="assets/img/icon-add.svg" alt="">
+                <img src="assets/img/icon-add.svg" alt="Icon Plus">
             </button>
         </div>
 
         <div class="btn-dark-mode">
             <button>
-                <img src="assets/img/icon-adjust.svg" alt="">
+                <img src="assets/img/icon-adjust.svg" alt="Icon adjust">
             </button>
         </div>
+
+        <section class="add-article" style="display: none;">
+            
+            <form action="">
+
+                <button class="add-article--close"><img src="assets/img/icon-close.svg" alt="Icon close"></button>
+
+                <h2>Poster un memo</h2>
+
+                <input type="text" placeholder="Entrez le nom de l'article">
+
+                <input type="text" placeholder="Autheur">
+                
+                <textarea name="" id="" cols="30" rows="10" placeholder="Tapez votre code"></textarea>
+
+                <input type="submit" value="Poster">
+
+            </form>
+
+        </section>
     </main>
 
 <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-app.js"></script>
