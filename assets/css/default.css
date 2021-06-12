@@ -7,6 +7,7 @@
   padding: 0;
   border: none;
   outline: none;
+  text-decoration: none;
 }
 
 html, body {
@@ -29,7 +30,142 @@ html, body {
   width: calc(100% * 1 / 6.001);
 }
 
+.width-2-6 {
+  width: calc(100% * 2 / 6.001);
+}
+
+.width-4-6 {
+  width: calc(100% * 4 / 6.001);
+}
+
 .width-5-6 {
   width: calc(100% * 5 / 6.001);
+}
+
+main {
+  height: 100%;
+  width: 100%;
+}
+
+main .sidebar {
+  background: #fff;
+  padding: 30px 20px;
+  -webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  min-height: 100%;
+}
+
+main .sidebar header h1 {
+  padding: 10px 0;
+  background: #FF9900;
+  color: #fff;
+  text-align: center;
+  border-radius: 1000px;
+  font-style: italic;
+}
+
+main .sidebar nav ul, main .sidebar nav li {
+  list-style: none;
+  text-align: center;
+}
+
+main .sidebar nav ul {
+  margin-top: 50px;
+}
+
+main .sidebar nav ul li {
+  margin: 15px auto;
+  padding: 10px 0;
+  background: #6495ED;
+  border-radius: 1000px;
+}
+
+main .sidebar nav ul li a {
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+main .content {
+  padding: 35px 20px;
+}
+
+main .content .search-bar {
+  width: 100%;
+  padding: 0 20px;
+}
+
+main .content .search-bar input {
+  width: 100%;
+  padding: 10px 20px;
+  border: 1px solid #373737;
+  border-radius: 1000px;
+  color: #535353;
+  font-style: italic;
+  font-size: 16px;
+}
+
+main .content .articles {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+  margin: 30px auto;
+}
+
+main .content .articles article {
+  margin: 20px;
+  padding: 20px;
+  background: #373737;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 20px;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
+main .content .articles article p {
+  color: #fff;
+  font-size: 14px;
+}
+
+main .content .articles article:hover {
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+  background: #fff;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+main .content .articles article:hover p {
+  color: #373737;
+}
+
+main .btn-add {
+  position: fixed;
+  bottom: 2.5%;
+  right: 2.5%;
+}
+
+main .btn-add button {
+  border-radius: 50%;
+  background: #6495ED;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px;
+  cursor: pointer;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
 }
 /*# sourceMappingURL=default.css.map */
